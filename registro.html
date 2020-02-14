@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>GameToday</title>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="javascript.js" defer></script>
+  	</head>
+
+    <body>
+        <div class="bg-dark">
+
+            <div class="bs-example">
+
+                <nav class="navbar navbar-expand-md navbar-dark bg-warning border">
+
+                    <a href="index.html" class="navbar-brand"><img src="img/home.png" alt="home"></a>
+
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+
+                        <div class="navbar-nav">
+
+                            <a href="index.html" class="nav-item nav-link">Portada</a>
+
+                            <a href="#" class="nav-item nav-link">Juegos</a>
+
+                            <a href="#" class="nav-item nav-link">Noticias</a>
+
+                            <a href="#" class="nav-item nav-link">Perfil</a>
+
+                        </div>
+
+                        <div class="navbar-nav ml-auto">
+
+                            <div class="input-group">
+
+                                <div class="btn-group" role="group">
+
+                                    <button type="button" class="btn btn-light" onClick="location.href='registro.html'">Regístrate</button>
+
+                                    <button type="button" class="btn btn-light mr-2">Login</button>
+
+                                </div>  
+
+                            </div>
+
+                        </div>
+
+                        <form class="form-inline" action="">
+
+                            <div class="input-group">
+
+                                <div class="input-group-prepend">
+
+                                    <span class="input-group-text">@</span>
+
+                                </div>
+
+                                <input type="text" class="form-control" placeholder="Usuario">
+
+                            </div>
+
+                        </form>
+
+            </nav>
+
+        </div> 
+
+        <div class="container">
+
+            <div class="jumbotron bg-warning mt-4 text-center border border-light rounded">
+
+                <h1>Registro de Usuario</h1>
+
+                <p class="lead">¿Eres nuevo? ¡Introduce tus datos y entra!</p>
+
+            </div> 
+
+            <form class="form-horizontal bg-warning mt-4 p-4 text-center border border-light rounded">
+            <fieldset>
+
+            <!-- Form Name -->
+            <legend class="mb-4"><h2>Crea Tu Cuenta</h2></legend>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-auto control-label font-weight-bold" for="nombreusuario">Nombre de Usuario</label>  
+              <div class="col-md-4 mx-auto">
+                <input id="nombreusuario" name="nombreusuario" type="text" placeholder="" class="form-control input-md">
+                <span class="help-block"><small>Introduce el nombre de usuario</small></span>  
+              </div>
+            </div>
+
+            <!-- Password input-->
+            <div class="form-group">
+              <label class="col-auto control-label font-weight-bold" for="contraseñausuario">Contraseña de Usuario</label>
+              <div class="col-md-4 mx-auto">
+                <input id="contraseñausuario" name="contraseñausuario" type="password" placeholder="" class="form-control input-md">
+                <span class="help-block"><small>Introduce la contraseña de usuario</small></span>
+              </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+              <label class="col-auto control-label font-weight-bold" for="correousuairo">Correo del Usuario</label>  
+              <div class="col-md-4 mx-auto">
+                <input id="correousuairo" name="correousuairo" type="text" placeholder="" class="form-control input-md">
+                <span class="help-block"><small>Introduce el correo de usuario</small></span>  
+              </div>
+            </div>
+
+            <!-- Multiple Radios -->
+            <div class="form-group">
+              <label class="col-auto control-label font-weight-bold" for="sexousuario">Sexo del Usuario</label>
+              <div class="col-md-4 mx-auto">
+              <div class="radio">
+                <label for="sexousuario-0">
+                  <input type="radio" name="sexousuario" id="sexousuario-0" value="Masculino" checked="checked">
+                  Masculino
+                </label>
+                </div>
+              <div class="radio">
+                <label for="sexousuario-1">
+                  <input type="radio" name="sexousuario" id="sexousuario-1" value="Femenino">
+                  Femenino
+                </label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Select Basic -->
+            <div class="form-group">
+              <label class="col-auto control-label font-weight-bold" for="plataformausuario">Plataforma Preferida del Usuario</label>
+              <div class="col-md-3 mx-auto">
+                <select id="plataformausuario" name="plataformausuario" class="form-control">
+                  <option value="PC">PC</option>
+                  <option value="Playstation">PlayStation</option>
+                  <option value="Xbox">Xbox</option>
+                  <option value="Android/iOS">Android/iOS</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="botonregistrar"><b>¡Registrate!</b></label>
+              <div class="col-auto">
+                <button id="botonregistrar" name="botonregistrar" class="btn btn-light" type="submit">Enviar</button>
+              </div>
+            </div>
+
+            </fieldset>
+            </form>                        
+
+        </div>    
+
+        <footer class="mainfooter bg-warning mt-4 border col-md-12">
+
+            <div class="row">
+
+                <div class="col-md-12 mt-2">
+
+                    <p class="text-center">&copy; Copyright 2020 - GameToday.  All rights reserved.</p>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+
+</html>
