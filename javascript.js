@@ -14,6 +14,10 @@ $("#porPlataforma").click(function() {
 
 $('[data-toggle="tooltip"]').tooltip();
 
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
 $('#formRegistro').on('submit', function(e){
   $('#myModal').modal('show');
   e.preventDefault();
