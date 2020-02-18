@@ -42,13 +42,13 @@
 
                         <div class="navbar-nav">
 
-                            <a href="index.html" class="nav-item nav-link">Portada</a>
+                            <a href="index.html" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de portada">Portada</a>
 
-                            <a href="#" class="nav-item nav-link">Juegos</a>
+                            <a href="#" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de juegos">Juegos</a>
 
-                            <a href="#" class="nav-item nav-link">Noticias</a>
+                            <a href="#" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de noticias">Noticias</a>
 
-                            <a href="#" class="nav-item nav-link">Perfil</a>
+                            <a href="#" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de perfil">Perfil</a>
 
                         </div>
 
@@ -58,9 +58,9 @@
 
                                 <div class="btn-group" role="group">
 
-                                    <button type="button" class="btn btn-light" onClick="location.href='registro.html'">Regístrate</button>
+                                    <button type="button" class="btn btn-light" onClick="location.href='registro.html'" data-placement="bottom" data-toggle="tooltip" title="Ir a la pagina de registro">Regístrate</button>
 
-                                    <button type="button" class="btn btn-light mr-2">Login</button>
+                                    <button type="button" class="btn btn-light mr-2" data-toggle="tooltip" data-placement="bottom" title="Loguearte">Login</button>
 
                                 </div>  
 
@@ -98,7 +98,7 @@
 
             </div> 
 
-            <form class="form-horizontal bg-warning mt-4 p-4 text-center border border-light rounded bg-light">
+            <form class="form-horizontal bg-warning mt-4 p-4 text-center border border-light rounded bg-light" id="formRegistro">
             <fieldset>
 
             <!-- Form Name -->
@@ -167,7 +167,7 @@
             <div class="form-group">
               <label class="col-md-4 control-label" for="botonregistrar"><b>¡Registrate!</b></label>
               <div class="col-auto">
-                <button id="botonregistrar" name="botonregistrar" class="btn btn-warning" type="submit">Enviar</button>
+                <button id="botonregistrar" name="botonregistrar" class="btn btn-warning" type="submit" data-toggle="modal" data-target="#myModal">Enviar</button>
               </div>
             </div>
 
@@ -190,6 +190,27 @@
 
         </footer>
 
+    </div>
+
+        <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Estás a punto de registrarte, ¿estas seguro?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">No</button>
+            <button type="button" class="btn btn-warning">Si</button>
+          </div>
+        </div>
+      </div>
     </div>
 </body>
 
