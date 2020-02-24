@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>GameToday</title>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="javascript.js" defer></script>
+  	</head>
+
+	<body>
+
+  	    <div class="bg-dark">
+
+  	    	<div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
+			  <strong>Holy guacamole!</strong> Parece que esta página no es completamente funcional :(
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			    <span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+
+			<div class="bs-example">
+
+    			<nav class="navbar navbar-expand-md navbar-dark bg-warning border">
+
+        			<a href="index.html" class="navbar-brand"><img src="img/home.png" alt="home"></a>
+
+        			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+
+            			<span class="navbar-toggler-icon"></span>
+
+        			</button>
+
+        			<div class="collapse navbar-collapse" id="navbarCollapse">
+
+           				<div class="navbar-nav">
+
+                			<a href="index.html" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de portada">Portada</a>
+
+                			<a href="juegos.html" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de juegos">Juegos</a>
+
+                			<a href="noticias.html" class="nav-item nav-link active" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de noticias">Noticias</a>
+
+                			<a href="perfil.html" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de perfil">Perfil</a>
+
+            			</div>
+
+            			<div class="navbar-nav ml-auto">
+
+            				<div class="input-group">
+
+            					<div class="btn-group" role="group">
+
+									<button type="button" class="btn btn-light" onClick="location.href='registro.html'" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de registro">Registrate</button>
+
+	                				<button type="button" class="btn btn-light mr-2" data-toggle="tooltip" data-placement="bottom" title="Loguearte">Login</button>
+
+                				</div>	
+
+            				</div>
+
+        				</div>
+
+        			    <form class="form-inline" action="">
+
+    						<div class="input-group">
+
+      							<div class="input-group-prepend">
+
+        							<span class="input-group-text">@</span>
+
+      							</div>
+
+      							<input type="text" class="form-control" data-toggle="popover" title="Login de usuario" data-content="Aqui tienes que poner el nombre de tu usuario. No funciona :)" placeholder="Usuario">
+
+    						</div>
+
+  						</form>
+
+    			</nav>
+
+          <div class="container mt-4">
+            <div class="row">
+              <div class="col-md-2">
+                           	
+              </div>
+              <div class="col-md-8 bg-warning text-center border border-light rounded" data-spy="scroll" data-target="#list-example" data-offset="0">
+      <div class="container-fluid">
+         <h3 class="mt-2">Ultimas noticias</h3>
+         <hr>
+         <div class="row">
+            <div class="col-4">
+               <div class="list-group" id="myScrollspy">
+                  <a class="list-group-item btn btn-warning font-weight-bold" href="#noticia1">Noticia 1</a>
+                  <a class="list-group-item btn btn-warning font-weight-bold" href="#noticia2">Noticia 2</a>
+                  <a class="list-group-item btn btn-warning font-weight-bold" href="#noticia3">Noticia 3</a>
+                  <a class="list-group-item btn btn-warning font-weight-bold" href="#noticia4">Noticia 4</a>
+                  <a class="list-group-item btn btn-warning font-weight-bold" href="#noticia5">Noticia 5</a>
+               </div>
+            </div>
+            <div class="col-8">
+               <div data-spy="scroll" data-target="#myScrollspy" data-offset="10" class="mb-4 bg-light"
+                  style="height:400px;overflow-y: scroll;padding:5px; border: 1px solid #ccc;">
+                  <h5 id="noticia1">Estos son los 20 peores videojuegos de la historia según Metacritic</h5>
+                  <img class="align-self-center my-2" src="img/noticia1.png" alt="Noticia 1">
+                  <p>
+					A todos nos gusta hacer listas y repasar cuáles son nuestros videojuegos favoritos. Sin embargo, habitualmente olvidamos esos nombres que nos producen pesadillas y rara vez elaboramos una con los títulos que menos nos han gustado. Esos que tratamos de olvidar y que no queremos volver a ver nunca más. Los gustos están formados por mil y un aspectos subjetivos, aunque hay veces en las que ni la opinión más personal puede tapar defectos tan evidentes.
+				  </p>
+				  <p>
+					Cuando hablamos de videojuegos malos hay nombres que salen rápidamente a la palestra como Super Man 64 o John Romero's Daikatana, entre otros. Sin embargo, según la nota media de Metacritic están muy lejos de ser considerados los peores. Tampoco lo está el reciente Warcraft III: Reforged a pesar de las críticas recibidas durante estos días. ¿Queréis saber cuáles son los peores? Acompañadnos en este repaso a los títulos peor valorados en Metacritic.
+                  </p>
+                  <hr>
+                  <h5 id="noticia2">¿Qué es el "modo juego" en las TV y pantallas y cómo de útil te puede resultar si eres gamer?</h5>
+                  <img class="align-self-center my-2" src="img/noticia2.png" alt="Noticia 2">
+                  <p>
+					Si eres uno de esos usuarios a los que les gusta trastear sus dispositivos para jugar lo mejor posible; al llegar a tu televisor es probable que te hayas encontrado con el "modo de juego" y teniendo ese nombre, la hayas activado. Esta opción tan enigmática encapsula lo que el fabricante identifica como la mejor configuración posible para jugar en su pantalla; pero sabemos que no todos los videojuegos son iguales. No buscamos los mismos ajustes en un título singleplayer como Disco Elysium, que en otro como Fortnite; con un corte más competitivo. Por esta razón, queremos explicaros qué hace esta configuración y si es verdaderamente interesante.
+                  </p>
+                  <hr>
+                  <h5 id="noticia3">The Witcher en Netflix concreta el reparto de su segunda temporada y Mark Hamill se queda fuera</h5>
+                  <img class="align-self-center my-2" src="img/noticia3.png" alt="Noticia 3">
+                  <p>
+					En el marco del rodaje de la Temporada 2 de The Witcher, la rama de fantasía y ciencia ficción de Netflix, NX, reveló hoy parte del reparto debutante que aparecerá en la continuación de la historia de Geralt de Rivia, donde figura Kristofer Hivju, veterano de Juego de Tronos, como Nivellen.
+				  </p>
+
+				  <p>
+					"El Continente se hizo un poco más grande, aquí está el nuevo reparto para The Witcher, Temporada 2:
+				  </p>	
+
+				  <ul>
+
+					<li>Yasen Atour como Coen</li>
+					<li>Agnes Bjorn como Vereena</li>
+					<li>Paul Bullion como Lambert</li>
+					<li>Kristofer Hivju como Nivellen</li>
+					<li>Thue Ersted Rasmussen como Eskel</li>
+					<li>Aisha Fabienne Ross como Lydia</li>
+					<li>Mecia Simson como Francesca"</li>
+
+				  </ul>	
+                  <hr>
+                  <h5 id="noticia4">Call of Duty Modern Warfare añade una animación de desmembramiento no apta para ojos sensibles</h5>
+                  <img class="align-self-center my-2" src="img/noticia4.png" alt="Noticia 4">
+                  <p>
+					Tras los rumores de lo que podría ser un modo Battle Royale para Call Of Duty: Modern Warfare y todas las novedades que nos ha ofrecido la Segunda Temporada del juego de Activision ahora nos llega una sangrienta animación incluída en la nueva actualización del título.
+				  </p>	
+
+				  <p>
+					Se trata de un desmembramiento brutal producido al disparar en la cabeza a un enemigo, tal y como podemos ver en la cinemática que ha subido la cuenta de noticias Call of Duty News:
+                  </p>
+
+                  <p>
+                  	Una animación gore que muestra la descuartización de la cabeza del otro jugador al recibir un disparo, algo no muy habitual a lo que estamos acostumbrados a ver en todas las entregas de la saga de CoD.
+                  </p>
+                  <hr>
+                  <h5 id="noticia5">GTA V y Red Dead Redemption 2 celebran un nuevo récord ¡y Rockstar lo celebra con contenidos gratis!</h5>
+                  <img class="align-self-center my-2" src="img/noticia5.png" alt="Noticia 5">
+                  <p>
+					Puede que Rockstar Games solo haya publicado dos juegos en toda la década pasada, pero nadie puede dudar de la rentabilidad de sus títulos. En un comunicado de prensa de Take-Two, la compañía ha presumido de cifras con los últimos resultados de ventas de Grand Theft Auto V y Red Dead Redemption 2, los cuales suman 150 millones de unidades vendidas en todo el mundo.
+				  </p>	
+
+				  <p>
+					Según señala la compañía, las ventas de GTA V y Red Dead Redemption 2 suman más de 150 millones de unidades a escala global, una cifra de auténtico escándalo pero no por ello inesperada, si tenemos en cuenta que GTA V superaba por sí solo los 100 millones a finales de 2018.
+                  </p>
+
+                  <p>
+                  	En este sentido, Take-Two remarca que GTA V ha sido también el juego más vendido de toda la década en base a los datos del NDP Group, algo que ya adelantaban los analistas al hablar sobre los juegos más vendidos de la década pasada. No en vano, el título de mundo abierto fue uno de los juegos digitales más rentables de 2019 seis años después de su lanzamiento.
+                  </p>
+                  <hr>                                    
+               </div>
+            </div>
+         </div>
+      </div>
+              </div> 
+              <div class="col-md-2">
+              </div>
+            </div>
+          </div>
+
+			<div aria-label="breadcrumb border border-light rounded">
+			  <ol class="breadcrumb mt-4 col-md-3 bg-warning border">
+			    <li class="breadcrumb-item"><a href="index.html" class="text-dark col-auto">Portada</a></li>
+			    <li class="breadcrumb-item active"><a href="noticias.html" class="text-dark col-auto">Noticias</a></li>
+			  </ol>
+			</div>
+
+          <footer class="mainfooter bg-warning mt-4 border col-md-12">
+            <div class="row">
+              <div class="col-md-12 mt-2">
+                <p class="text-center">&copy; Copyright 2020 - GameToday.  All rights reserved.</p>
+              </div>
+            </div>
+          </footer>
+    		</div>	
+  </body>
+</html>          

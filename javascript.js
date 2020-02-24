@@ -35,3 +35,7 @@ $("#botonpg2").click(function() {
 	$("#pagina1").hide();
 	$("#pagina2").show();
 });
+
+$('body').scrollspy({
+    target: '#list-example'
+});
