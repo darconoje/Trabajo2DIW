@@ -103,7 +103,7 @@
 
             </div> 
 
-            <form class="form-horizontal bg-warning mt-4 p-4 text-center border border-light rounded bg-light" id="formRegistro">
+            <form class="form-horizontal bg-warning mt-4 p-4 text-center border border-light rounded bg-light needs-validation" id="formRegistro" novalidate>
             <fieldset>
 
             <!-- Form Name -->
@@ -113,27 +113,36 @@
             <div class="form-group border border-dark rounded bg-warning">
               <label class="col-auto control-label font-weight-bold" for="nombreusuario">Nombre de Usuario</label>  
               <div class="col-md-4 mx-auto">
-                <input id="nombreusuario" name="nombreusuario" type="text" placeholder="" class="form-control input-md">
+                <input id="nombreusuario" name="nombreusuario" type="text" placeholder="" class="form-control input-md" required>
                 <span class="help-block"><small>Introduce el nombre de usuario</small></span>  
               </div>
+              <div class="valid-feedback">
+                Looks good!
+              </div>              
             </div>
 
             <!-- Password input-->
             <div class="form-group border border-dark rounded bg-warning">
               <label class="col-auto control-label font-weight-bold" for="contraseñausuario">Contraseña de Usuario</label>
               <div class="col-md-4 mx-auto">
-                <input id="contraseñausuario" name="contraseñausuario" type="password" placeholder="" class="form-control input-md">
+                <input id="contraseñausuario" name="contraseñausuario" type="password" placeholder="" class="form-control input-md" required>
                 <span class="help-block"><small>Introduce la contraseña de usuario</small></span>
               </div>
+              <div class="valid-feedback">
+                Looks good!
+              </div>              
             </div>
 
             <!-- Text input-->
             <div class="form-group border border-dark rounded bg-warning">
               <label class="col-auto control-label font-weight-bold" for="correousuairo">Correo del Usuario</label>  
               <div class="col-md-4 mx-auto">
-                <input id="correousuairo" name="correousuairo" type="text" placeholder="" class="form-control input-md">
+                <input id="correousuairo" name="correousuairo" type="text" placeholder="" class="form-control input-md" required>
                 <span class="help-block"><small>Introduce el correo de usuario</small></span>  
               </div>
+              <div class="valid-feedback">
+                Looks good!
+              </div>              
             </div>
 
             <!-- Multiple Radios -->
