@@ -1,17 +1,21 @@
-$("#topsPlataforma").show();
-$("#topsGenero").hide();
+$("#topsPlataforma").addClass("invisible");
+$("#topsGenero").addClass("visible");
 
 $("#pagina1").show();
 $("#pagina2").hide();
 
 $("#porGenero").click(function() {
-   $("#topsPlataforma").hide();
-   $("#topsGenero").show();
+   $("#topsPlataforma").removeClass("visible");
+   $("#topsPlataforma").addClass("invisible");
+   $("#topsGenero").removeClass("invisible");
+   $("#topsGenero").addClass("visible");
 });
 
 $("#porPlataforma").click(function() {
-	$("#topsPlataforma").show();
-	$("#topsGenero").hide();
+	$("#topsPlataforma").removeClass("invisible");
+	$("#topsPlataforma").addClass("visible");
+	$("#topsGenero").removeClass("visible");
+	$("#topsGenero").addClass("invisible");
 });
 
 
