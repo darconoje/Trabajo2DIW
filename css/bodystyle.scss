@@ -1,0 +1,11 @@
+$body_color: #ffc107;
+
+@mixin paddingmargin($n){
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: $body_color;
+    @include paddingmargin(0);
+}

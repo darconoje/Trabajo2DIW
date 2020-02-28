@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAsBA,AARA,GAQG,CARiB;EAChB,aAAa,EALF,GAAG,CAKe,KAAK,CAJhB,KAAK;CAK1B;;AAUD,AARA,MAQM,CARW;EACb,UAAU,EATC,GAAG,CASY,KAAK,CARb,KAAK;CAS1B",
+    "sources": [
+        "borderstyle.scss"
+    ],
+    "names": [],
+    "file": "borderstyle.css"
+}

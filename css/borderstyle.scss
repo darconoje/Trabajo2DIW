@@ -1,0 +1,29 @@
+@function seleccionar($lista,$indice){
+    $resultado: black;
+    @for $i from 1 through length($lista) {
+        @if $indice == $i{
+            $resultado: nth($lista,$i);
+        }
+    }
+    @return $resultado;
+}
+
+$border_width: 4px;
+$colors: yellow,black,white,red;
+$border_color: seleccionar($colors,3) ;
+
+%border_bottom_style{
+    border-bottom: $border_width solid $border_color;
+}
+
+%border_top_style{
+    border-top: $border_width solid $border_color;
+}
+
+nav{
+    @extend %border_bottom_style;
+}
+
+footer{
+    @extend %border_top_style;
+}

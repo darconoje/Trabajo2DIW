@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACOA,AAAA,IAAI,CAAA;EACA,gBAAgB,EARP,OAAO;EAGhB,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,GAAG;CAMd;;ACYD,AARA,GAQG,CARiB;EAChB,aAAa,EALF,GAAG,CAKe,KAAK,CAJhB,KAAK;CAK1B;;AAUD,AARA,MAQM,CARW;EACb,UAAU,EATC,GAAG,CASY,KAAK,CARb,KAAK;CAS1B",
+    "sources": [
+        "estilo.scss",
+        "bodystyle.scss",
+        "borderstyle.scss"
+    ],
+    "names": [],
+    "file": "estilo.css"
+}
