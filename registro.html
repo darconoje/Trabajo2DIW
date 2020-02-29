@@ -27,6 +27,9 @@
 
     <body>
         <div class="bg-dark">
+
+          <!-- ALERT - Alerta que avisa de la no funcionabilidad de la página y que puede ser desechada -->
+
           <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
             <strong>Holy guacamole!</strong> Parece que esta página no es completamente funcional :(
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -35,9 +38,13 @@
           </div>
             <div class="bs-example">
 
+                <!-- NAVBAR - Barra de navegación de la web -->
+
                 <nav class="navbar navbar-expand-md navbar-dark bg-warning">
 
                     <a href="index.html" class="navbar-brand"><h1 class="text-hide" style="background-image: url('img/home.png'); width: 50px; height: 50px;">GameToday</h1></a>
+
+                    <!-- COLLAPSE - Al reducir el ancho de la pantalla lo suficiente, aparece un botón toggler para mostrar el menú de navegación -->
 
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 
@@ -48,6 +55,8 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
 
                         <div class="navbar-nav">
+
+                            <!-- NAV - Elemento de navegación que te redirige en este caso a la página de Portada -->
 
                             <a href="index.html" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de portada">Portada</a>
 
@@ -61,9 +70,15 @@
 
                         <div class="navbar-nav ml-auto">
 
+                            <!-- INPUT GROUP -->
+
                             <div class="input-group">
 
+                                <!-- BUTTON GROUP - Los botones de Login y Registro están unidos -->
+
                                 <div class="btn-group" role="group">
+
+                                    <!-- BUTTON - Al hacer click en este botón específico, te lleva a la página de registro -->
 
                                     <button type="button" class="btn btn-light" onClick="location.href='registro.html'" data-placement="bottom" data-toggle="tooltip" title="Ir a la pagina de registro">Registrate</button>
 
@@ -97,6 +112,8 @@
 
         <div class="container">
 
+            <!-- JUMBOTRON - Indica la sección de la página en la que nos encontramos -->
+
             <div class="jumbotron bg-warning mt-4 text-center border border-light rounded">
 
                 <h1>Registro de Usuario</h1>
@@ -104,6 +121,10 @@
                 <p class="lead">¿Eres nuevo? ¡Introduce tus datos y entra!</p>
 
             </div> 
+
+            <!-- FORM - Formulario para el registro de usuarios -->
+
+            <!-- VALIDACION FORM - En este formulario se ha añadido validación, si un campo no está relleno se coloreará de rojo y si lo está, de verde -->
 
             <form class="form-horizontal bg-warning mt-4 p-4 text-center border border-light rounded bg-light needs-validation" id="formRegistro" novalidate>
             <fieldset>
@@ -192,6 +213,14 @@
 
         </div>  
 
+        <!-- BREADCRUMB - Guía de en qué parte de la navegación de la página estás, con links directos a la parte de donde proviene la página actual -->
+
+        <!-- UTILIDAD DE BORDE - Se ha usado la utilidad de borde en diferentes partes, como por ejemplo, en el breadcrumb -->
+
+        <!-- TAMAÑO DE COLUMNA POR CADA RESPONSIVE BREAKPOINT - Se ha usado el breadcrumb para especificar un tamaño de columna específico por determinados tamaños de pantalla -->
+
+        <!-- MARGIN Y PADDING POR CADA RESPONSIVE BREAKPOINT - Se ha usado el breadcrumb para especificar un margin y padding específicos por determinados tamaños de pantalla -->     
+
         <div aria-label="breadcrumb border border-light rounded col-xl-3 col-lg-3 col-md-4 col-sm-5 col-8">
           <ol class="breadcrumb p-1 p-xl-3 p-lg-3 p-md-2 p-sm-2 my-4 my-xl-5 my-lg-4 my-md-3 my-sm-3 bg-warning border border-light rounded col-xl-3 col-lg-3 col-md-4 col-sm-5 col-8">
             <li class="breadcrumb-item"><a href="index.html" class="text-dark col-auto">Portada</a></li>
@@ -215,7 +244,8 @@
 
     </div>
 
-        <!-- Modal -->
+    <!-- MODAL - Se muestra al hacer click en el botón submit de Registro -->
+
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">

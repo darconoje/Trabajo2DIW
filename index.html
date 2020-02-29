@@ -29,6 +29,8 @@
 
   	    <div class="bg-dark">
 
+  	    	<!-- ALERT - Alerta que avisa de la no funcionabilidad de la página y que puede ser desechada -->
+
   	    	<div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
 			  <strong>Holy guacamole!</strong> Parece que esta página no es completamente funcional :(
 			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -38,9 +40,13 @@
 
 			<div class="bs-example">
 
+				<!-- NAVBAR - Barra de navegación de la web -->
+
     			<nav class="navbar navbar-expand-md navbar-dark bg-warning">
 
         			<a href="index.html" class="navbar-brand"><h1 class="text-hide" style="background-image: url('img/home.png'); width: 50px; height: 50px;">GameToday</h1></a>
+
+        			<!-- COLLAPSE - Al reducir el ancho de la pantalla lo suficiente, aparece un botón toggler para mostrar el menú de navegación -->
 
         			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 
@@ -51,6 +57,10 @@
         			<div class="collapse navbar-collapse" id="navbarCollapse">
 
            				<div class="navbar-nav">
+
+           					<!-- NAV - Elemento de navegación que te redirige en este caso a la página de Portada -->
+
+    						<!-- TOOLTIP - Al pasar por encima de este link, se muestra un texto informativo de hacia donde se dirige -->
 
                 			<a href="index.html" class="nav-item nav-link active" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de portada">Portada</a>
 
@@ -64,9 +74,15 @@
 
             			<div class="navbar-nav ml-auto">
 
+            				<!-- INPUT GROUP -->
+
             				<div class="input-group">
 
+            					<!-- BUTTON GROUP - Los botones de Login y Registro están unidos -->
+
             					<div class="btn-group" role="group">
+
+            						<!-- BUTTON - Al hacer click en este botón específico, te lleva a la página de registro -->
 
 									<button type="button" class="btn btn-light" onClick="location.href='registro.html'" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de registro">Registrate</button>
 
@@ -88,6 +104,8 @@
 
       							</div>
 
+      							<!-- POPOVER - Al hacer click en el input para introducir el nombre de usuario, aparecerá un texto informativo, que se desechará al hacer click de nuevo en el input -->
+
       							<input type="text" class="form-control" data-toggle="popover" title="Login de usuario" data-content="Aqui tienes que poner el nombre de tu usuario. No funciona :)" placeholder="Usuario">
 
     						</div>
@@ -100,6 +118,8 @@
 
     		<div class="container">
 
+    			<!-- JUMBOTRON - Indica la sección de la página en la que nos encontramos -->
+
 				<div class="jumbotron bg-warning mt-4 text-center border border-light rounded">
 
         			<h1>Últimos lanzamientos</h1>
@@ -109,6 +129,8 @@
     			</div>
 
     			<div class="bg-light p-4 rounded">
+
+    				<!-- CAROUSEL - Carrusel que muestra a simple vista cada uno de los últimos juegos en el mercado -->
 
 					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
@@ -162,6 +184,9 @@
     			<div class="bg-light p-4 rounded">
     				<div class="row">
     					  <div class="col-auto mx-auto my-4">
+
+    					  	<!-- COLLAPSE - Al pulsar en el botón, aparece el div con noticias -->
+
     						<button class="btn btn-warning" type="button" data-toggle="collapse" data-target="#divNoticias" aria-expanded="false" aria-controls="collapseExample">
    								Mostrar Noticias
 							</button>
@@ -171,10 +196,13 @@
 
     					<div class="col-auto">
 							<div class="card bg-warning" style="width: 20rem;">
-							  <img class="card-img-top" src="" alt="Card image cap">
+							  <img class="card-img-top" src="img/card.png" alt="Card image cap">
 							  <div class="card-body">
 							    <p class="card-text border bg-light text-center font-weight-bold">DOOM Eternal promete más contenidos tras el lanzamiento además de sus DLC</p>
 							    <div class="mb-2">
+
+							    	<!-- BADGES - Etiquetas que en este caso informan de la categoría de la noticia en cuestión -->
+
 							    	<span class="badge badge-danger">PC</span>
 							    	<span class="badge badge-success">Accion</span>
 							    	<span class="badge badge-pill badge-primary">Avance</span>
@@ -184,8 +212,11 @@
 							</div>
 						</div>
     					<div class="col-auto">
+
+    						<!-- CARD - Cada uno de los iconos de noticias están incluidas en un elemento card -->
+
 							<div class="card bg-warning" style="width: 20rem;">
-							  <img class="card-img-top" src="" alt="Card image cap">
+							  <img class="card-img-top" src="img/card.png" alt="Card image cap">
 							  <div class="card-body">
 							    <p class="card-text border bg-light text-center font-weight-bold">Una prueba de Call of Duty: Modern Warfare sugiere cierta ventaja en los jugadores que usan mando</p>
 							    <div class="mb-2">
@@ -199,7 +230,7 @@
 						</div>
     					<div class="col-auto">
 							<div class="card bg-warning" style="width: 20rem;">
-							  <img class="card-img-top" src="" alt="Card image cap">
+							  <img class="card-img-top" src="img/card.png" alt="Card image cap">
 							  <div class="card-body">
 							    <p class="card-text border bg-light text-center font-weight-bold">Los fans de Los Sims 4 rinden homenaje a uno de sus modders más queridos que falleció</p>
 							    <div class="mb-2">
@@ -215,7 +246,7 @@
 					<div class="row mt-4 collapse" id="divNoticias">
     					<div class="col-auto">
 							<div class="card bg-warning" style="width: 20rem;">
-							  <img class="card-img-top" src="" alt="Card image cap">
+							  <img class="card-img-top" src="img/card.png" alt="Card image cap">
 							  <div class="card-body">
 							    <p class="card-text border bg-light text-center font-weight-bold">7 creadores de videojuegos frustrados que protagonizaron polémicas en la industria</p>
 							    <div class="mb-2">
@@ -229,7 +260,7 @@
 						</div>
     					<div class="col-auto">
 							<div class="card bg-warning" style="width: 20rem;">
-							  <img class="card-img-top" src="" alt="Card image cap">
+							  <img class="card-img-top" src="img/card.png" alt="Card image cap">
 							  <div class="card-body">
 							    <p class="card-text border bg-light text-center font-weight-bold">¿Un FPS de Alien dirigido por Cliff Bleszinski? El creador de Gears of War detalla cómo iba a ser el juego</p>
 							    <div class="mb-2">
@@ -243,7 +274,7 @@
 						</div>
     					<div class="col-auto">
 							<div class="card bg-warning" style="width: 20rem;">
-							  <img class="card-img-top" src="" alt="Card image cap">
+							  <img class="card-img-top" src="img/card.png" alt="Card image cap">
 							  <div class="card-body">
 							    <p class="card-text border bg-light text-center font-weight-bold">A la espera de un nuevo juego de Batman, así de bien puede llegar a verse ahora Arkham Knight</p>
 							    <div class="mb-2">
@@ -267,6 +298,9 @@
     			<div class="bg-light p-4 rounded">
     				<div class="row justify-content-center">
 						<div class="btn-group mb-2">
+
+						  <!-- DROPDOWN - Al pinchar en el botón aparece una lista desplegable para seleccionar qué tabla ver -->
+
 						  <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						    Mostrar Tops
 						  </button>
@@ -285,6 +319,9 @@
 	    				<div class="row">
 	    					<div class="col-4">
 	    						<p class="font-weight-bold text-center">Accion</p>
+
+	    						<!-- TABLA - Tabla Bootstrap que muestra videojuegos -->
+
 								<table class="table table-responsive table-hover table-striped table-bordered" id="tabla1">
 								  <thead>
 								    <tr>
@@ -392,6 +429,9 @@
 
     				<div id="topsPlataforma">
 		   				<div class="row-12">
+
+		   						<!-- UTILIDADES DE TEXTO - Se han utilizado varias utilidades de texto, por ejemplo, en este h4 -->
+
 		    					<h4 class="text-center text-danger font-weight-bold my-4"><u>TOPS POR PLATAFORMAS</u></h4>
 		    				</div>
 		    				<div class="row">
@@ -505,6 +545,14 @@
         		</div>
     		</div>
 		</div>
+
+			<!-- BREADCRUMB - Guía de en qué parte de la navegación de la página estás, con links directos a la parte de donde proviene la página actual -->
+
+			<!-- UTILIDAD DE BORDE - Se ha usado la utilidad de borde en diferentes partes, como por ejemplo, en el breadcrumb -->
+
+			<!-- TAMAÑO DE COLUMNA POR CADA RESPONSIVE BREAKPOINT - Se ha usado el breadcrumb para especificar un tamaño de columna específico por determinados tamaños de pantalla -->
+
+			<!-- MARGIN Y PADDING POR CADA RESPONSIVE BREAKPOINT - Se ha usado el breadcrumb para especificar un margin y padding específicos por determinados tamaños de pantalla -->
 
 			<div aria-label="breadcrumb border border-light rounded col-xl-3 col-lg-3 col-md-4 col-sm-5 col-7">
 			  <ol class="breadcrumb p-1 p-xl-3 p-lg-3 p-md-2 p-sm-2 my-4 my-xl-5 my-lg-4 my-md-3 my-sm-3 bg-warning border col-xl-3 col-lg-3 col-md-4 col-sm-5 col-7">

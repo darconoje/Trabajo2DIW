@@ -1,3 +1,4 @@
+// UTILIDAD DE VISIBILIDAD - Mediante jQuery se modifica la clase de las tablas para indicar si son visibles o no son visibles
 $("#topsPlataforma").addClass("invisible");
 $("#topsGenero").addClass("visible");
 

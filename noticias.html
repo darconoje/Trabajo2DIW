@@ -29,6 +29,8 @@
 
   	    <div class="bg-dark">
 
+          <!-- ALERT - Alerta que avisa de la no funcionabilidad de la página y que puede ser desechada -->
+
   	    	<div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
 			  <strong>Holy guacamole!</strong> Parece que esta página no es completamente funcional :(
 			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -38,9 +40,13 @@
 
 			<div class="bs-example">
 
+          <!-- NAVBAR - Barra de navegación de la web -->
+
     			<nav class="navbar navbar-expand-md navbar-dark bg-warning">
 
         			<a href="index.html" class="navbar-brand"><h1 class="text-hide" style="background-image: url('img/home.png'); width: 50px; height: 50px;">GameToday</h1></a>
+
+              <!-- COLLAPSE - Al reducir el ancho de la pantalla lo suficiente, aparece un botón toggler para mostrar el menú de navegación -->
 
         			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
 
@@ -51,6 +57,8 @@
         			<div class="collapse navbar-collapse" id="navbarCollapse">
 
            				<div class="navbar-nav">
+
+                      <!-- NAV - Elemento de navegación que te redirige en este caso a la página de Portada -->
 
                 			<a href="index.html" class="nav-item nav-link" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de portada">Portada</a>
 
@@ -64,11 +72,17 @@
 
             			<div class="navbar-nav ml-auto">
 
+                    <!-- INPUT GROUP -->
+
             				<div class="input-group">
+
+                      <!-- BUTTON GROUP - Los botones de Login y Registro están unidos -->
 
             					<div class="btn-group" role="group">
 
-									<button type="button" class="btn btn-light" onClick="location.href='registro.html'" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de registro">Registrate</button>
+                        <!-- BUTTON - Al hacer click en este botón específico, te lleva a la página de registro -->
+
+									        <button type="button" class="btn btn-light" onClick="location.href='registro.html'" data-toggle="tooltip" data-placement="bottom" title="Ir a la pagina de registro">Registrate</button>
 
 	                				<button type="button" class="btn btn-light mr-2" data-toggle="tooltip" data-placement="bottom" title="Loguearte">Login</button>
 
@@ -107,6 +121,9 @@
          <hr>
          <div class="row">
             <div class="col-4">
+
+               <!-- LISTGROUP - Listgroup que facilita la navegación entre las distintas noticias de esta página -->
+
                <div class="list-group" id="myScrollspy">
                   <a class="list-group-item btn btn-warning font-weight-bold" href="#noticia1">Noticia 1</a>
                   <a class="list-group-item btn btn-warning font-weight-bold" href="#noticia2">Noticia 2</a>
@@ -116,53 +133,59 @@
                </div>
             </div>
             <div class="col-8">
+
+               <!-- SCROLLSPY - Un scrollspy en el que se muestra las noticias individualmente y que está asociado al listgroup de la lista de noticias -->
+
                <div data-spy="scroll" data-target="#myScrollspy" data-offset="10" class="mb-4 bg-light"
                   style="height:400px;overflow-y: scroll;padding:5px; border: 1px solid #ccc;">
                   <h5 id="noticia1">Estos son los 20 peores videojuegos de la historia según Metacritic</h5>
+
+                  <!-- UTILIDADES DE IMÁGENES - Se ha usado utilidades de imágenes para las miniaturas de las noticias -->
+
                   <img class="align-self-center my-2 img-thumbnail" src="img/noticia1.png" alt="Noticia 1">
                   <p>
-					A todos nos gusta hacer listas y repasar cuáles son nuestros videojuegos favoritos. Sin embargo, habitualmente olvidamos esos nombres que nos producen pesadillas y rara vez elaboramos una con los títulos que menos nos han gustado. Esos que tratamos de olvidar y que no queremos volver a ver nunca más. Los gustos están formados por mil y un aspectos subjetivos, aunque hay veces en las que ni la opinión más personal puede tapar defectos tan evidentes.
-				  </p>
-				  <p>
-					Cuando hablamos de videojuegos malos hay nombres que salen rápidamente a la palestra como Super Man 64 o John Romero's Daikatana, entre otros. Sin embargo, según la nota media de Metacritic están muy lejos de ser considerados los peores. Tampoco lo está el reciente Warcraft III: Reforged a pesar de las críticas recibidas durante estos días. ¿Queréis saber cuáles son los peores? Acompañadnos en este repaso a los títulos peor valorados en Metacritic.
+					           A todos nos gusta hacer listas y repasar cuáles son nuestros videojuegos favoritos. Sin embargo, habitualmente olvidamos esos nombres que nos producen pesadillas y rara vez elaboramos una con los títulos que menos nos han gustado. Esos que tratamos de olvidar y que no queremos volver a ver nunca más. Los gustos están formados por mil y un aspectos subjetivos, aunque hay veces en las que ni la opinión más personal puede tapar defectos tan evidentes.
+				          </p>
+				          <p>
+					           Cuando hablamos de videojuegos malos hay nombres que salen rápidamente a la palestra como Super Man 64 o John Romero's Daikatana, entre otros. Sin embargo, según la nota media de Metacritic están muy lejos de ser considerados los peores. Tampoco lo está el reciente Warcraft III: Reforged a pesar de las críticas recibidas durante estos días. ¿Queréis saber cuáles son los peores? Acompañadnos en este repaso a los títulos peor valorados en Metacritic.
                   </p>
                   <hr>
                   <h5 id="noticia2">¿Qué es el "modo juego" en las TV y pantallas y cómo de útil te puede resultar si eres gamer?</h5>
                   <img class="align-self-center my-2 img-thumbnail" src="img/noticia2.png" alt="Noticia 2">
                   <p>
-					Si eres uno de esos usuarios a los que les gusta trastear sus dispositivos para jugar lo mejor posible; al llegar a tu televisor es probable que te hayas encontrado con el "modo de juego" y teniendo ese nombre, la hayas activado. Esta opción tan enigmática encapsula lo que el fabricante identifica como la mejor configuración posible para jugar en su pantalla; pero sabemos que no todos los videojuegos son iguales. No buscamos los mismos ajustes en un título singleplayer como Disco Elysium, que en otro como Fortnite; con un corte más competitivo. Por esta razón, queremos explicaros qué hace esta configuración y si es verdaderamente interesante.
+					           Si eres uno de esos usuarios a los que les gusta trastear sus dispositivos para jugar lo mejor posible; al llegar a tu televisor es probable que te hayas encontrado con el "modo de juego" y teniendo ese nombre, la hayas activado. Esta opción tan enigmática encapsula lo que el fabricante identifica como la mejor configuración posible para jugar en su pantalla; pero sabemos que no todos los videojuegos son iguales. No buscamos los mismos ajustes en un título singleplayer como Disco Elysium, que en otro como Fortnite; con un corte más competitivo. Por esta razón, queremos explicaros qué hace esta configuración y si es verdaderamente interesante.
                   </p>
                   <hr>
                   <h5 id="noticia3">The Witcher en Netflix concreta el reparto de su segunda temporada y Mark Hamill se queda fuera</h5>
                   <img class="align-self-center my-2 img-thumbnail" src="img/noticia3.png" alt="Noticia 3">
                   <p>
-					En el marco del rodaje de la Temporada 2 de The Witcher, la rama de fantasía y ciencia ficción de Netflix, NX, reveló hoy parte del reparto debutante que aparecerá en la continuación de la historia de Geralt de Rivia, donde figura Kristofer Hivju, veterano de Juego de Tronos, como Nivellen.
-				  </p>
+					           En el marco del rodaje de la Temporada 2 de The Witcher, la rama de fantasía y ciencia ficción de Netflix, NX, reveló hoy parte del reparto debutante que aparecerá en la continuación de la historia de Geralt de Rivia, donde figura Kristofer Hivju, veterano de Juego de Tronos, como Nivellen.
+				          </p>
 
-				  <p>
-					"El Continente se hizo un poco más grande, aquí está el nuevo reparto para The Witcher, Temporada 2:
-				  </p>	
+				          <p>
+					           "El Continente se hizo un poco más grande, aquí está el nuevo reparto para The Witcher, Temporada 2:
+				          </p>	
 
-				  <ul>
+				          <ul>
 
-					<li>Yasen Atour como Coen</li>
-					<li>Agnes Bjorn como Vereena</li>
-					<li>Paul Bullion como Lambert</li>
-					<li>Kristofer Hivju como Nivellen</li>
-					<li>Thue Ersted Rasmussen como Eskel</li>
-					<li>Aisha Fabienne Ross como Lydia</li>
-					<li>Mecia Simson como Francesca"</li>
+          					<li>Yasen Atour como Coen</li>
+          					<li>Agnes Bjorn como Vereena</li>
+          					<li>Paul Bullion como Lambert</li>
+          					<li>Kristofer Hivju como Nivellen</li>
+          					<li>Thue Ersted Rasmussen como Eskel</li>
+          					<li>Aisha Fabienne Ross como Lydia</li>
+          					<li>Mecia Simson como Francesca"</li>
 
-				  </ul>	
+        				  </ul>	
                   <hr>
                   <h5 id="noticia4">Call of Duty Modern Warfare añade una animación de desmembramiento no apta para ojos sensibles</h5>
                   <img class="align-self-center my-2 img-thumbnail" src="img/noticia4.png" alt="Noticia 4">
                   <p>
-					Tras los rumores de lo que podría ser un modo Battle Royale para Call Of Duty: Modern Warfare y todas las novedades que nos ha ofrecido la Segunda Temporada del juego de Activision ahora nos llega una sangrienta animación incluída en la nueva actualización del título.
-				  </p>	
+					         Tras los rumores de lo que podría ser un modo Battle Royale para Call Of Duty: Modern Warfare y todas las novedades que nos ha ofrecido la Segunda Temporada del juego de Activision ahora nos llega una sangrienta animación incluída en la nueva actualización del título.
+				          </p>	
 
-				  <p>
-					Se trata de un desmembramiento brutal producido al disparar en la cabeza a un enemigo, tal y como podemos ver en la cinemática que ha subido la cuenta de noticias Call of Duty News:
+				          <p>
+					         Se trata de un desmembramiento brutal producido al disparar en la cabeza a un enemigo, tal y como podemos ver en la cinemática que ha subido la cuenta de noticias Call of Duty News:
                   </p>
 
                   <p>
@@ -172,20 +195,22 @@
                   <h5 id="noticia5">GTA V y Red Dead Redemption 2 celebran un nuevo récord ¡y Rockstar lo celebra con contenidos gratis!</h5>
                   <img class="align-self-center my-2 img-thumbnail" src="img/noticia5.png" alt="Noticia 5">
                   <p>
-					Puede que Rockstar Games solo haya publicado dos juegos en toda la década pasada, pero nadie puede dudar de la rentabilidad de sus títulos. En un comunicado de prensa de Take-Two, la compañía ha presumido de cifras con los últimos resultados de ventas de Grand Theft Auto V y Red Dead Redemption 2, los cuales suman 150 millones de unidades vendidas en todo el mundo.
-				  </p>	
+					         Puede que Rockstar Games solo haya publicado dos juegos en toda la década pasada, pero nadie puede dudar de la rentabilidad de sus títulos. En un comunicado de prensa de Take-Two, la compañía ha presumido de cifras con los últimos resultados de ventas de Grand Theft Auto V y Red Dead Redemption 2, los cuales suman 150 millones de unidades vendidas en todo el mundo.
+				          </p>	
 
-				  <p>
-					Según señala la compañía, las ventas de GTA V y Red Dead Redemption 2 suman más de 150 millones de unidades a escala global, una cifra de auténtico escándalo pero no por ello inesperada, si tenemos en cuenta que GTA V superaba por sí solo los 100 millones a finales de 2018.
+				          <p>
+					         Según señala la compañía, las ventas de GTA V y Red Dead Redemption 2 suman más de 150 millones de unidades a escala global, una cifra de auténtico escándalo pero no por ello inesperada, si tenemos en cuenta que GTA V superaba por sí solo los 100 millones a finales de 2018.
                   </p>
 
                   <p>
                   	En este sentido, Take-Two remarca que GTA V ha sido también el juego más vendido de toda la década en base a los datos del NDP Group, algo que ya adelantaban los analistas al hablar sobre los juegos más vendidos de la década pasada. No en vano, el título de mundo abierto fue uno de los juegos digitales más rentables de 2019 seis años después de su lanzamiento.
                   </p>
 
-					<div class="embed-responsive embed-responsive-16by9">
-					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-8MN89fIaJ8" allowfullscreen></iframe>
-					</div>                  
+                  <!-- UTILIDADES EMBED - Se ha insertado un video en la página mediante utilidades embed -->
+
+        					<div class="embed-responsive embed-responsive-16by9">
+        					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-8MN89fIaJ8" allowfullscreen></iframe>
+        					</div>                  
                   <hr>                                    
                </div>
             </div>
@@ -196,6 +221,14 @@
               </div>
             </div>
           </div>
+
+      <!-- BREADCRUMB - Guía de en qué parte de la navegación de la página estás, con links directos a la parte de donde proviene la página actual -->
+
+      <!-- UTILIDAD DE BORDE - Se ha usado la utilidad de borde en diferentes partes, como por ejemplo, en el breadcrumb -->
+
+      <!-- TAMAÑO DE COLUMNA POR CADA RESPONSIVE BREAKPOINT - Se ha usado el breadcrumb para especificar un tamaño de columna específico por determinados tamaños de pantalla -->
+
+      <!-- MARGIN Y PADDING POR CADA RESPONSIVE BREAKPOINT - Se ha usado el breadcrumb para especificar un margin y padding específicos por determinados tamaños de pantalla -->      
 
 			<div aria-label="breadcrumb border border-light rounded col-xl-3 col-lg-3 col-md-4 col-sm-5 col-8">
 			  <ol class="breadcrumb p-1 p-xl-3 p-lg-3 p-md-2 p-sm-2 my-4 my-xl-5 my-lg-4 my-md-3 my-sm-3 col-xl-3 col-lg-3 col-md-4 col-sm-5 col-8 bg-warning border justify-content-center">
